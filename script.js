@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
+    const HEADER_OFFSET = 120;
 
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.primary-nav');
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentSection = '';
 
         sections.forEach(section => {
-            const top = section.offsetTop - 120;
+            const top = section.offsetTop - HEADER_OFFSET;
             const bottom = top + section.offsetHeight;
 
             if (window.scrollY >= top && window.scrollY < bottom) {
