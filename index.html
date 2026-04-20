@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="KMGaWukN-3TRFkLrVpixx3d6YsbXBnj4dbdAFpXzA3I" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Rutul Patel</title>
-    <meta name="description" content="Rutul Patel's portfolio website is coming soon with exciting new projects and designs.">
-    
-    <!-- Google Fonts -->
+    <title>Rutul Patel | Computer Engineer & Developer</title>
+    <meta name="description" content="Professional portfolio of Rutul Patel, a computer engineer and developer building modern, reliable, and user-focused software.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-    <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?">
@@ -25,89 +21,145 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Blurry Navbar -->
-        <nav class="navbar">
-            <div class="navbar-content">
-                <span class="navbar-brand">rutulpatel</span>
+    <header class="site-header" id="top">
+        <div class="container nav-container">
+            <a href="#top" class="logo">Rutul Patel</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Computer Engineer • Developer</p>
+                    <h1>Building clean, scalable, and impactful digital products.</h1>
+                    <p class="hero-text">
+                        I am Rutul Patel, a computer engineering developer focused on creating practical solutions,
+                        strong user experiences, and production-ready applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contact">Let’s Connect</a>
+                        <a class="btn btn-outline" href="#projects">View Projects</a>
+                    </div>
+                    <div class="hero-socials" aria-label="Social links">
+                        <a href="https://github.com/rutulpatel07" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://github.com/rutulpatel07/Rutul_Portfolio" target="_blank" rel="noopener noreferrer" aria-label="Portfolio Repository">
+                            <i data-lucide="folder-git-2"></i>
+                        </a>
+                        <a href="#projects" aria-label="Featured Projects">
+                            <i data-lucide="briefcase-business"></i>
+                        </a>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Highlights">
+                    <h2>Quick Highlights</h2>
+                    <ul>
+                        <li><i data-lucide="check-circle-2"></i> Strong foundation in software engineering and problem solving</li>
+                        <li><i data-lucide="check-circle-2"></i> Focus on maintainable architecture and clean code practices</li>
+                        <li><i data-lucide="check-circle-2"></i> Experience with web development and modern tooling</li>
+                    </ul>
+                </aside>
             </div>
-        </nav>
+        </section>
 
-        <!-- Animated background elements -->
-        <div class="background-elements">
-            <!-- Grid lines -->
-            <div class="grid-bg"></div>
-
-            <!-- Neon glow elements -->
-            <div class="glow-element glow-cyan"></div>
-            <div class="glow-element glow-fuchsia"></div>
-            <div class="glow-element glow-emerald"></div>
-        </div>
-
-        <!-- Neon scanning lines -->
-        <div class="scan-lines">
-            <div class="scan-line scan-horizontal scan-cyan" style="top: 10%;"></div>
-            <div class="scan-line scan-horizontal scan-fuchsia" style="top: 30%; animation-delay: 2s;"></div>
-            <div class="scan-line scan-horizontal scan-emerald" style="top: 70%; animation-delay: 4s;"></div>
-
-            <div class="scan-line scan-vertical scan-cyan" style="left: 20%;"></div>
-            <div class="scan-line scan-vertical scan-fuchsia" style="left: 80%; animation-delay: 3s;"></div>
-        </div>
-
-        <!-- Main content -->
-        <main class="main-content">
-            <div class="content-wrapper">
-                <!-- Main heading -->
-                <h1 class="main-heading fade-in-up">
-                    <span class="gradient-text gradient-1">COMING</span>
-                    <br>
-                    <span class="gradient-text gradient-2">SOON</span>
-                </h1>
-
-                <!-- Subtitle -->
-                <p class="subtitle fade-in-up delay-600">
-                    My portfolio is evolving into something extraordinary.
-                    <span class="subtitle-accent">Stay tuned for the unveiling.</span>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="section-intro">
+                    I am a computer engineering developer with a passion for designing solutions that are both
+                    technically robust and user-centered. I enjoy turning ideas into real products through careful
+                    planning, efficient development, and continuous improvement.
                 </p>
+            </div>
+        </section>
 
-                <!-- Progress bar -->
-                <div class="progress-section fade-in-up delay-900">
-                    <div class="progress-header">
-                        <span>Development Progress</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                    <div class="progress-footer">Launching Soon</div>
-                </div>
-
-                <!-- Social links -->
-                <div class="social-links fade-in-up delay-1200">
-                    <a href="#" class="social-link" data-color="cyan">
-                        <i data-lucide="github"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="fuchsia">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="emerald">
-                        <i data-lucide="twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="cyan">
-                        <i data-lucide="mail"></i>
-                    </a>
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="cards three-cols">
+                    <article class="card">
+                        <h3>Languages</h3>
+                        <p>C, C++, JavaScript, TypeScript, Python</p>
+                    </article>
+                    <article class="card">
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, React, Responsive UI Development</p>
+                    </article>
+                    <article class="card">
+                        <h3>Backend & Tools</h3>
+                        <p>Node.js, REST APIs, Git & GitHub, Linux</p>
+                    </article>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content fade-in-up delay-1500">
-                <p>© 2025 Rutul Patel. All rights reserved.</p>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="cards three-cols">
+                    <article class="card project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio designed to showcase profile, skills, and project work.</p>
+                        <a href="https://github.com/rutulpatel07/Rutul_Portfolio" target="_blank" rel="noopener noreferrer">View Repository</a>
+                    </article>
+                    <article class="card project-card">
+                        <h3>Project Title 2</h3>
+                        <p>Add your project summary here: challenge solved, tech stack used, and outcome delivered.</p>
+                        <span class="project-link-placeholder">Project link coming soon</span>
+                    </article>
+                    <article class="card project-card">
+                        <h3>Project Title 3</h3>
+                        <p>Add your project summary here: performance improvements, features, and user impact.</p>
+                        <span class="project-link-placeholder">Project link coming soon</span>
+                    </article>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section id="experience" class="section alt-bg">
+            <div class="container">
+                <h2>Experience & Education</h2>
+                <div class="cards two-cols">
+                    <article class="card">
+                        <h3>Computer Engineering</h3>
+                        <p>Building a strong base in algorithms, system design, and software development practices.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Developer Growth</h3>
+                        <p>Continuously learning by shipping projects, refining architecture, and improving code quality.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-box">
+                <h2>Let’s Build Something Great</h2>
+                <p>Open to internships, freelance work, and collaboration opportunities.</p>
+                <a class="btn btn-primary" href="https://github.com/rutulpatel07" target="_blank" rel="noopener noreferrer">Contact on GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Rutul Patel. All rights reserved.</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
