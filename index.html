@@ -2,112 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="KMGaWukN-3TRFkLrVpixx3d6YsbXBnj4dbdAFpXzA3I" />
+    <meta name="google-site-verification" content="KMGaWukN-3TRFkLrVpixx3d6YsbXBnj4dbdAFpXzA3I">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Rutul Patel</title>
-    <meta name="description" content="Rutul Patel's portfolio website is coming soon with exciting new projects and designs.">
-    
-    <!-- Google Fonts -->
+    <title>Rutul Patel | Portfolio</title>
+    <meta name="description" content="Rutul Patel's one-page portfolio with experience, projects, skills, and contact links.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
-    <!-- Favicon  -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?">
     <link rel="manifest" href="favicon/site.webmanifest">
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Blurry Navbar -->
-        <nav class="navbar">
-            <div class="navbar-content">
-                <span class="navbar-brand">rutulpatel</span>
-            </div>
-        </nav>
-
-        <!-- Animated background elements -->
-        <div class="background-elements">
-            <!-- Grid lines -->
-            <div class="grid-bg"></div>
-
-            <!-- Neon glow elements -->
-            <div class="glow-element glow-cyan"></div>
-            <div class="glow-element glow-fuchsia"></div>
-            <div class="glow-element glow-emerald"></div>
-        </div>
-
-        <!-- Neon scanning lines -->
-        <div class="scan-lines">
-            <div class="scan-line scan-horizontal scan-cyan" style="top: 10%;"></div>
-            <div class="scan-line scan-horizontal scan-fuchsia" style="top: 30%; animation-delay: 2s;"></div>
-            <div class="scan-line scan-horizontal scan-emerald" style="top: 70%; animation-delay: 4s;"></div>
-
-            <div class="scan-line scan-vertical scan-cyan" style="left: 20%;"></div>
-            <div class="scan-line scan-vertical scan-fuchsia" style="left: 80%; animation-delay: 3s;"></div>
-        </div>
-
-        <!-- Main content -->
-        <main class="main-content">
-            <div class="content-wrapper">
-                <!-- Main heading -->
-                <h1 class="main-heading fade-in-up">
-                    <span class="gradient-text gradient-1">COMING</span>
-                    <br>
-                    <span class="gradient-text gradient-2">SOON</span>
-                </h1>
-
-                <!-- Subtitle -->
-                <p class="subtitle fade-in-up delay-600">
-                    My portfolio is evolving into something extraordinary.
-                    <span class="subtitle-accent">Stay tuned for the unveiling.</span>
-                </p>
-
-                <!-- Progress bar -->
-                <div class="progress-section fade-in-up delay-900">
-                    <div class="progress-header">
-                        <span>Development Progress</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                    <div class="progress-footer">Launching Soon</div>
-                </div>
-
-                <!-- Social links -->
-                <div class="social-links fade-in-up delay-1200">
-                    <a href="#" class="social-link" data-color="cyan">
-                        <i data-lucide="github"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="fuchsia">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="emerald">
-                        <i data-lucide="twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" data-color="cyan">
-                        <i data-lucide="mail"></i>
-                    </a>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content fade-in-up delay-1500">
-                <p>© 2025 Rutul Patel. All rights reserved.</p>
-            </div>
-        </footer>
+    <div class="bg-layer">
+        <div class="grid-bg"></div>
+        <div class="glow glow-blue"></div>
+        <div class="glow glow-purple"></div>
+        <div class="glow glow-green"></div>
+        <div class="scanlines"></div>
     </div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="brand" id="brand-name">rutulpatel</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero container">
+            <p class="eyebrow" id="hero-eyebrow"></p>
+            <h1 class="hero-title" id="hero-name"></h1>
+            <p class="hero-role" id="hero-role"></p>
+            <p class="hero-summary" id="hero-summary"></p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-stats">
+                <article>
+                    <h3 id="years-experience">0+</h3>
+                    <p>Years Building</p>
+                </article>
+                <article>
+                    <h3 id="projects-count">0+</h3>
+                    <p>Projects</p>
+                </article>
+                <article>
+                    <h3 id="skills-count">0+</h3>
+                    <p>Core Skills</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <h2>About</h2>
+            <p id="about-summary"></p>
+        </section>
+
+        <section class="section container" id="experience">
+            <h2>Experience</h2>
+            <div id="experience-list" class="card-grid"></div>
+        </section>
+
+        <section class="section container" id="projects">
+            <h2>Projects</h2>
+            <div id="projects-grid" class="card-grid"></div>
+        </section>
+
+        <section class="section container" id="skills">
+            <h2>Skills</h2>
+            <div id="skills-grid" class="card-grid"></div>
+        </section>
+
+        <section class="section container" id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <a id="email-link" class="contact-card" href="#">
+                    <i data-lucide="mail"></i>
+                    <span id="email-text"></span>
+                </a>
+                <a id="location-link" class="contact-card" href="#" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="map-pin"></i>
+                    <span id="location-text"></span>
+                </a>
+            </div>
+            <div class="social-links" id="social-links"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="footer-year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
