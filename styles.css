@@ -252,6 +252,13 @@ p {
     text-decoration: underline;
 }
 
+.project-link-placeholder {
+    margin-top: 0.9rem;
+    display: inline-block;
+    color: var(--muted);
+    font-weight: 600;
+}
+
 .contact-box {
     text-align: center;
 }
