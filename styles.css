@@ -2,6 +2,7 @@
     --bg: #0b1020;
     --bg-soft: #111831;
     --surface: #151e3b;
+    --bg-dropdown: #0f1732;
     --text: #eef2ff;
     --muted: #b9c2e4;
     --accent: #60a5fa;
@@ -309,7 +310,7 @@ p {
         position: absolute;
         right: 4%;
         top: 4.3rem;
-        background: #0f1732;
+        background: var(--bg-dropdown);
         border: 1px solid var(--border);
         border-radius: 14px;
         flex-direction: column;
