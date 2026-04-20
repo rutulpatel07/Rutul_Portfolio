@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
+    const DEFAULT_HEADER_OFFSET = 120;
 
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.primary-nav');
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const setActiveNavLink = () => {
         let currentSection = '';
-        const headerOffset = siteHeader ? siteHeader.offsetHeight + 24 : 120;
+        const headerOffset = siteHeader ? siteHeader.offsetHeight + 24 : DEFAULT_HEADER_OFFSET;
 
         sections.forEach(section => {
             const top = section.offsetTop - headerOffset;
